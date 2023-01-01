@@ -80,4 +80,42 @@ not in	Returns True if a sequence with the specified value is not present in the
 # <<	Zero fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off
 # >>	Signed right shift	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
 
+a=2
+b=2
+print(a is not b)
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+print(x is not y)
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+print(x != y)
+
+# Showing the difference between them
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is not z)
+# returns False because z is the same object as x
+
+print(x is not y)
+# returns True because x is not the same object as y, even if they have the same content
+print(x != y)
+
+# to demonstrate the difference betweeen "is not" and "!=": this comparison returns False because x is equal to y
+
+# Python Bitwise Operators
+# Bitwise operators are used to compare (binary) numbers:
+
+Operator	Name	Description
+& 	AND	Sets each bit to 1 if both bits are 1
+|	OR	Sets each bit to 1 if one of two bits is 1
+^	XOR	Sets each bit to 1 if only one of two bits is 1
+~	NOT	Inverts all the bits
+<<	Zero fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off
+>>	Signed right shift	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
 
