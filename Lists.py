@@ -142,5 +142,227 @@ thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
 thislist[1:3] = ["blackcurrant", "watermelon"]
 print(thislist)
 
+# If you insert more items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:
+#
+# Example
+# Change the second value by replacing it with two new values:
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+# Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
+
+# If you insert less items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:
+
+# Example
+# Change the second and third value by replacing it with one value:
+thislist = ["apple", "banana", "cherry"]
+thislist[1:3] = ["watermelon"]
+print(thislist)
+
+# Insert Items
+# To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+#
+# The insert() method inserts an item at the specified index:
+#
+# Example
+# Insert "watermelon" as the third item:
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
+
+# Append Items
+# To add an item to the end of the list, use the append() method:
+#
+# Example
+# Using the append() method to append an item:
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+# Insert Items
+# To insert a list item at a specified index, use the insert() method.
+#
+# The insert() method inserts an item at the specified index:
+#
+# Example
+# Insert an item as the second position:
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+
+# Extend List
+# To append elements from another list to the current list, use the extend() method.
+#
+# Example
+# Add the elements of tropical to thislist:
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+
+# The elements will be added to the end of the list.
+#
+# Add Any Iterable
+# The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+#
+# Example
+# Add elements of a tuple to a list:
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+#
+# Remove Specified Item
+# The remove() method removes the specified item.
+#
+# Example
+# Remove "banana":
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+# Remove Specified Index
+# The pop() method removes the specified index.
+#
+# Example
+# Remove the second item:
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+# If you do not specify the index, the pop() method removes the last item.
+#
+# Example
+# Remove the last item:
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+
+# The del keyword also removes the specified index:
+#
+# Example
+# Remove the first item:
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+# The del keyword can also delete the list completely.
+#
+# Example
+# Delete the entire list:
+thislist = ["apple", "banana", "cherry"]
+del thislist
+
+# Clear the List
+# The clear() method empties the list.
+#
+# The list still remains, but it has no content.
+#
+# Example
+# Clear the list content:
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
 
 
+# Loop Through a List
+# You can loop through the list items by using a for loop:
+#
+# Example
+# Print all items in the list, one by one:
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+# Loop Through the Index Numbers
+# You can also loop through the list items by referring to their index number.
+#
+# Use the range() and len() functions to create a suitable iterable.
+#
+# Example
+# Print all items by referring to their index number:
+#
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+   print(thislist[i])
+# The iterable created in the example above is [0, 1, 2].
+
+# Using a While Loop
+# You can loop through the list items by using a while loop.
+#
+# Use the len() function to determine the length of the list, then start at 0 and loop your way through the list items by referring to their indexes.
+#
+# Remember to increase the index by 1 after each iteration.
+#
+# Example
+# Print all items, using a while loop to go through all the index numbers
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+# Looping Using List Comprehension
+# List Comprehension offers the shortest syntax for looping through lists:
+#
+# Example
+# A short hand for loop that will print all items in a list:
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+
+# List Comprehension
+# List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+#
+# Example:
+#
+# Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.
+#
+# Without list comprehension you will have to write a for statement with a conditional test inside:
+#
+# Example
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+# With list comprehension you can do all that with only one line of code:
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+# Sort List Alphanumerically
+# List objects have a sort() method that will sort the list alphanumerically, ascending, by default:
+#
+# Example
+# Sort the list alphabetically:
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+# Example
+# Sort the list numerically:
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+# Sort Descending
+# To sort descending, use the keyword argument reverse = True:
+#
+# Example
+# Sort the list descending:
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+# Example
+# Sort the list descending:
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse = True)
+print(thislist)
