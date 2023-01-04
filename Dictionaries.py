@@ -56,3 +56,54 @@ print(thisdict)
 print(len(thisdict))
 
 
+# Dictionary Items - Data Types
+# The values in dictionary items can be of any data type:
+#
+# Example
+# String, int, boolean, and list data types:
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+
+}
+print(thisdict)
+
+
+# type()
+# From Python's perspective, dictionaries are defined as objects with the data type 'dict':
+#
+# <class 'dict'>
+# Example
+# Print the data type of a dictionary:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(type(thisdict))
+
+
+# The dict() Constructor
+# It is also possible to use the dict() constructor to make a dictionary.
+#
+# Example
+# Using the dict() method to make a dictionary:
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+
+
+# Python Collections (Arrays)
+# There are four collection data types in the Python programming language:
+#
+# List is a collection which is ordered and changeable. Allows duplicate members.
+# Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+# Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+# Dictionary is a collection which is ordered** and changeable. No duplicate members.
+# *Set items are unchangeable, but you can remove and/or add items whenever you like.
+#
+# **As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+#
+# When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for
+# a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.
