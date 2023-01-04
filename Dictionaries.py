@@ -136,3 +136,34 @@ thisdict = {
 }
 x = thisdict.get("model")
 print(x)
+
+
+# Example
+# Add a new item to the original dictionary, and see that the keys list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change
+
+
+# Get Values
+# The values() method will return a list of all the values in the dictionary.
+#
+# Example
+# Get a list of the values:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.values()
+print(x)
