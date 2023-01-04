@@ -16,7 +16,6 @@ thisdict = {
 #
 # Example
 # Create and print a dictionary:
-
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
@@ -40,4 +39,20 @@ print(thisdict)
 #
 # Example
 # Duplicate values will overwrite existing values:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+
+
+# Dictionary Length
+# To determine how many items a dictionary has, use the len() function:
+#
+# Example
+# Print the number of items in the dictionary:
+print(len(thisdict))
+
 
