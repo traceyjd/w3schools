@@ -169,3 +169,151 @@ x = thisdict.values()
 print(x)
 
 
+# The list of the values is a view of the dictionary, meaning that any changes done to the dictionary will be reflected in the values list.
+#
+# Example
+# Make a change in the original dictionary, and see that the values list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.values()
+
+print(x) #before the change
+
+car["year"] = 2020
+
+print(x) #after the change
+
+
+# Example
+# Add a new item to the original dictionary, and see that the values list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.values()
+
+print(x) #before the change
+
+car["color"] = "red"
+
+print(x) #after the change
+
+
+# Get Items
+# The items() method will return each item in a dictionary, as tuples in a list.
+#
+# Example
+# Get a list of the key:value pairs
+x = thisdict.items()
+
+
+# The returned list is a view of the items of the dictionary, meaning that any changes done to the dictionary will be reflected in the items list.
+#
+# Example
+# Make a change in the original dictionary, and see that the items list gets updated as well:
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.items()
+
+print(x) #before the change
+
+car["year"] = 2020
+
+print(x) #after the change
+
+
+# The returned list is a view of the items of the dictionary, meaning that any changes done to the dictionary will be reflected in the items list.
+#
+# Example
+# Make a change in the original dictionary, and see that the items list gets updated as well:
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.items()
+
+print(x) #before the change
+
+car["year"] = 2020
+
+print(x) #after the change
+
+#
+# Example
+# Add a new item to the original dictionary, and see that the items list gets updated as well:car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.items()
+
+print(x) #before the change
+
+car["color"] = "red"
+
+print(x) #after the change
+
+# Check if Key Exists
+# To determine if a specified key is present in a dictionary use the in keyword:
+#
+# Example
+# Check if "model" is present in the dictionary:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+Check if Key
+Exists
+To
+determine if a
+specified
+key is present in a
+dictionary
+use
+the in keyword:
+
+# Example
+# Check if "model" is present in the
+# dictionary:
+thisdict = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+
+# Update Dictionary
+# The update() method will update the dictionary with the items from the given argument.
+#
+# The argument must be a dictionary, or an iterable object with key:value pairs.
+#
+# Example
+# Update the "year" of the car by using the update() method:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020})
+
+
