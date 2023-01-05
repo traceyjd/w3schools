@@ -14,6 +14,7 @@ while i < 6:
   print(i)
   i += 1
 
+
 # Note: remember to increment i, or else the loop will continue forever.
 #
 # The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
