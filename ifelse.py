@@ -118,6 +118,7 @@ if a > b and c > a:
   print("Both conditions are True")
 
 
+
 # Or
 # The or keyword is a logical operator, and is used to combine conditional statements:
 #
