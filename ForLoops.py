@@ -84,6 +84,7 @@ for x in range(2, 30, 3):
   print(x)
 
 
+
 # Else in For Loop
 # The else keyword in a for loop specifies a block of code to be executed when the loop is finished:
 #
@@ -95,6 +96,7 @@ else:
   print("Finally finished!")
 
 
+
 # Note: The else block will NOT be executed if the loop is stopped by a break statement.
 #
 # Example
@@ -104,6 +106,7 @@ for x in range(6):
   print(x)
 else:
   print("Finally finished!")
+
 
 
 # Nested Loops
