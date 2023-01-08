@@ -55,8 +55,6 @@ mytripler = myfunc(3)
 print(mytripler(11))
 
 # Or, use the same function definition to make both functions, in the same program:
-
-# Or, use the same function definition to make both functions, in the same program:
 #
 # Example
 def myfunc(n):
