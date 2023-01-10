@@ -131,3 +131,18 @@ p1.age = 40
 #
 # Example
 # Delete the age property from the p1 object:
+del p1.age
+
+
+# Delete Objects
+# You can delete objects by using the del keyword:
+#
+# Example
+# Delete the p1 object:
+del p1
+
+# The pass Statement
+# class definitions cannot be empty, but if you for some reason have a class definition with no content, put in the pass statement to avoid getting an error.
+# Example
+class Person:
+  pass
