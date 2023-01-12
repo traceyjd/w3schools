@@ -62,3 +62,5 @@ mysql-connector 2.1.6
 pip             18.1
 pymongo         3.6.1
 setuptools      39.0.1
+
+
