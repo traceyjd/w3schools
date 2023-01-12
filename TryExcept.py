@@ -70,7 +70,6 @@ except:
 finally:
   print("The 'try except' is finished")
 
-
 # This can be useful to close objects and clean up resources:
 #
 # Example
