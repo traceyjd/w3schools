@@ -3,4 +3,6 @@
 try:
   print(x)
 except:
-  print("An exception occurred")
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
