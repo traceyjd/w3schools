@@ -201,5 +201,6 @@ else:
 # Remove the folder "myfolder":
 import os
 os.rmdir("myfolder")
-Note: You can only remove empty folders.
+
+#  Note: You can only remove empty folders.
 
