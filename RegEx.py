@@ -22,7 +22,6 @@ import re
 txt = "The rain in Spain"
 x = re.search("^The.*Spain$", txt)
 
-
 # RegEx Functions
 # The re module offers a set of functions that allows us to search a string for a match:
 #
